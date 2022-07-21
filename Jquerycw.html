@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jquery</title>
+    <!-- Do more write less
+    we use Jquery b two methods
+    1.By using online link/(cdn)
+    2.Use downloaded library(has built in methods)
+    $ = identifire
+    document -- Specify dom (document object model)
+    ready -- is even
+    Basic Syntax
+    $(document).ready(functioon(){
+        
+    }) -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <button class="h">Hide</button>
+    <button class="s">Show</button>
+    <button class="fo">Fade Out</button>
+    <button class="fi">Fade In</button>
+    <button class="su">Slide Up</button>
+    <button class="sd">Slide Down</button>
+    <button class="st">Slide Toggle</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis totam distinctio rem aliquam tempore consequatur voluptatibus, earum temporibus libero ratione, inventore voluptatem nesciunt sint iste quas assumenda? A, magnam?</p>
+    <script>
+        $(document).ready(function(){
+            $('.h').click(function(){
+                $('p').hide();
+            });
+
+        $(document).ready(function(){
+            $('.s').click(function(){
+                $('p').show();
+            })
+        })
+        $('.fo').click(function(){
+            $('p').fadeOut();
+        })
+        $('.fi').click(function(){
+            $('p').fadeIn();
+        });
+        $('.su').click(function(){
+            $('p').slideUp();
+        });
+        $('.sd').click(function(){
+            $('p').slideDown();
+        });
+        $('.st').click(function(){
+            $('p').slideToggle();
+        });
+        })
+    </script>
+</body>
+</html>
